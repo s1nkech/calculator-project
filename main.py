@@ -15,6 +15,8 @@ def divide(a, b):
     return a / b
 def power(a, b):
     """Возведение в степень"""
+    if b < 0:
+        return "Ошибка: отрицательная степень не поддерживается"
     return a ** b
 
 def square_root(a):
